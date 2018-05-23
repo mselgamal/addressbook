@@ -18,9 +18,9 @@ Running the application:
 	- /tests contains test-scripts, run as node test-scriptX.js (you can set ports etc like above) 
 
 assumptions:
-	- you can create a contact with only name field, remaining fileds are set to '' by default
+	- you can create a contact with only name field, remaining fields are set to '' by default
 	- regarding the query request. If page > # of possible pages, then i just return [0...n] n = num of possible pages. My understanding of 'page': it's basically an offset, i.e p1,p2,p3...pn if page = p2, then i return [p2...pn]
 
 missing functionality:
 	- i'm not using mocha for unit testing, just didnt have enough time to set it up. I created some test scripts that test functionality and print some relevant output to console.
-	- i didnt prepare a proper test script for the query request, i tested it manually in a crude way. I had trouble creating a bunch of contacts then doing a query right after, for some reason the contacts wouldnt show up. But older contacts that were created outside of the script were displaying as expected. 
+	- i didnt prepare a proper test script for the query request, i tested it manually in a crude way. I had trouble creating a bunch of contacts then doing a query right after, for some reason the contacts wouldn't show up. But other contacts created outside the script, displayed as expected. 
