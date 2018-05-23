@@ -14,7 +14,7 @@ function testScript2() {
 		console.log("Test Script Failed\n"); 
 	}).catch((err)=>{
 		console.log("\nError: "+err.message+"\n");
-		data.name = 'bob';
+		data.name = 'baker';
 		data.number = '24878781';
 		return callCreate(data);
 	}).then((res)=>{

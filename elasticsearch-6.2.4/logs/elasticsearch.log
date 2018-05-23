@@ -170,3 +170,7 @@ Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [
 [2018-05-23T01:06:56,659][INFO ][o.e.n.Node               ] [kXSkM6k] started
 [2018-05-23T01:06:58,389][INFO ][o.e.g.GatewayService     ] [kXSkM6k] recovered [1] indices into cluster_state
 [2018-05-23T01:06:59,827][INFO ][o.e.c.r.a.AllocationService] [kXSkM6k] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[addressbook][3]] ...]).
+[2018-05-23T06:09:11,610][INFO ][o.e.n.Node               ] [kXSkM6k] stopping ...
+[2018-05-23T06:09:12,005][INFO ][o.e.n.Node               ] [kXSkM6k] stopped
+[2018-05-23T06:09:12,005][INFO ][o.e.n.Node               ] [kXSkM6k] closing ...
+[2018-05-23T06:09:12,089][INFO ][o.e.n.Node               ] [kXSkM6k] closed

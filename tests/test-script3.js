@@ -1,8 +1,9 @@
 let contact = require('../src/contact');
 
 function testScript3() {
+	let name = 'max';
 	let data = {
-		name:'tom',
+		name:'max',
 		number: '2487878187',
 		address:'6000 bedford ln, clinton MD 20835',
 	};
@@ -21,15 +22,15 @@ function testScript3() {
 	}).then((res)=>{
 		console.log("\nGet\n");
 		console.log(res);
-		return callUpdate({name:data.name,email:'bob21@gmail.com'});
+		return callUpdate(name,{name:data.name,email:'bob21@gmail.com'});
 	}).then((res)=>{
 		console.log("\nUpdate\n");
 		console.log(res);
-		return callGet(data.name);
+		return callGet(name);
 	}).then((res)=>{
 		console.log("\nGet\n");
 		console.log(res);
-		return callDelete(data.name);
+		return callDelete(name);
 	}).then((res)=>{
 		console.log("\nDelete\n");
 		console.log(res);
@@ -48,8 +49,8 @@ function callGet(name){
 	return contact.get(name);
 }
 
-function callUpdate(data){
-	return contact.update(data);
+function callUpdate(name,data){
+	return contact.update(name,data);
 }
 
 function callDelete(name){

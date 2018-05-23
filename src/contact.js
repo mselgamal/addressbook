@@ -37,14 +37,14 @@ function create(params) {
 }
 
 /*
-	verify contact fields, then update contact's email, number or address
+	verify contact fields, then update contact's name, email, number or address
 	return promise
 */
-function update(params) {
+function update(name,params) {
 	let keys = Object.keys(params);
 	let data = {};
 	try {
-		verify.verifyName(params.name);
+		verify.verifyName(name);
 		for (let k of keys) {
 			if (k === 'email')
 				data.email = verify.verifyEmail(params.email);
@@ -52,6 +52,8 @@ function update(params) {
 				data.number = verify.verifyNumber(params.number);
 			else if (k === 'address')
 				data.address = verify.verifyNumber(params.address);
+			else if (k === 'name')
+				data.name = verify.verifyName(params.name);
 		}
 	} catch(err) {
 		return new Promise((resolve,reject)=>{
@@ -62,7 +64,7 @@ function update(params) {
 	return client.update({
 		index: indexName,
 		type: "contact",
-		id: params.name,
+		id: name,
 		body: {
 			doc: data
 		}
@@ -87,9 +89,47 @@ function get(name) {
 	});
 }
 
+/*
+	make search call then analyze result 
+	if page > # of pages in the query
+	return [0...n], where n is number of pages
+	if page < # of pages, return [page...n]
+	otherwise return []
+*/
+function query(pageSize,page,queryString,callBack){
+	search(queryString).then((res)=>{
+		pageSize = Number(pageSize), page = Number(page);
+		let hits = res.hits.hits, result = [];
+		console.log(hits);
+		if (res.hits.total > 0) {
+			let remainder = hits.reduce((acc,ele)=>{
+				//console.log(ele)
+				acc.push(ele);
+				if (acc.length === pageSize){
+					result.push(acc);
+					acc = []; 
+				}
+				return acc;
+			},[]);
+
+			if (remainder.length !== 0)
+				result.push(remainder);
+
+			if (result.length >= page)
+				result = result.slice(page-1,result.length);
+		}
+		callBack({hits:result});
+	}).catch((err)=>{
+		console.log(err);
+		callBack({error:err.message});
+	});
+}
+
+//make search call, return promise
 function search(queryString) {
 	return client.search({
 		index: indexName,
+		type: "contact",
 		body: {
 			query: {
 				query_string: {
@@ -104,4 +144,4 @@ exports.create = create;
 exports.update = update;
 exports.delete = del;
 exports.get = get;
-exports.search = search;
+exports.query = query;

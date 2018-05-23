@@ -2,7 +2,7 @@ let contact = require('../src/contact');
 
 function testScript2() {
 	let data = {
-		name:'tom',
+		name:'sim',
 		number: '2487878187',
 		address:'6000 bedford ln, clinton MD 20835',
 	};

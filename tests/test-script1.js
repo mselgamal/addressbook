@@ -2,7 +2,7 @@ let contact = require('../src/contact');
 
 function testScript1() {
 	let data = {
-		name:'bob',
+		name:'horton',
 		number: '2487878187',
 		address:'6000 funland street MD',
 		email: ''
@@ -26,6 +26,7 @@ function testScript1() {
 	}).catch((err)=>{
 		console.log("Test Script Failed\n");
 		console.log(err.message+"\n");
+		console.log(err);
 	});
 }
 

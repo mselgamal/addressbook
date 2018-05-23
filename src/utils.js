@@ -20,7 +20,7 @@ otherwise throw exception
 */
 function verifyNumber(number) {
 	let regex = RegExp(/^1?[2-9][0-9]{9}$/);
-	if (!number)
+	if (!number || number === '')
 		return '';
 	else if (regex.test(number))
 		return number;
@@ -33,7 +33,7 @@ return address when valid or throw exception
 */
 function verifyAddress(address) {
 	let regex = RegExp(/^[\d\w\s\,]{10,50}$/);
-	if (!address)
+	if (!address || address === '')
 		return '';
 	else if (regex.test(address))
 		return address;
@@ -47,7 +47,7 @@ return email when valid or throw exception
 */
 function verifyEmail(email) {
 	let regex = RegExp(/^[\w]{3,4}[\w\d-]{0,15}@[\w-]{2,15}\.[\w]{3}$/);
-	if (!email)
+	if (!email || email === '')
 		return '';
 	else if (regex.test(email))
 		return email;
