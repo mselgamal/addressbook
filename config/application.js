@@ -1,6 +1,7 @@
 let enviroment = process.env.NODE_ENV,
 	path = require('path'),
-	express = require('express');
+	express = require('express'),
+	parser = require('body-parser');
 
 global.App = {
 	started: false,
@@ -19,14 +20,14 @@ global.App = {
 		} else {
 			console.log("AddressBook app is already running");
 		}
-	},
-	route: function(route) {
-		return this.require("addressbook/routes/"+route);
 	}
 };
 
-let contactRoutes = App.require('addressbook/routes/contact-routes'), 
-	contactHandler = App.require('addressbook/handlers/contact-handler'), 
-	contactRouter = express.router();
+App.app.use(parser.json());
+
+let contactRoutes = App.require('routes/contact-routes'), 
+	contactHandler = App.require('handlers/contact-handler'), 
+	contactRouter = express.Router();
 App.app.use(contactRouter);
-contactRoutes(contactRouter,contactHandler);
+//console.log(contactHandler);
+contactRoutes.routes(contactRouter,contactHandler);

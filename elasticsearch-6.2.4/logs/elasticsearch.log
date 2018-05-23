@@ -1,0 +1,172 @@
+[2018-05-23T00:58:27,115][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-23T00:58:27,351][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [11.8gb], net total_space [17.5gb], types [ext4]
+[2018-05-23T00:58:27,351][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] heap size [1015.6mb], compressed ordinary object pointers [true]
+[2018-05-23T00:58:27,408][INFO ][o.e.n.Node               ] node name [kXSkM6k] derived from node ID [kXSkM6kVR-ixnFJF8YHP3A]; set [node.name] to override
+[2018-05-23T00:58:27,410][INFO ][o.e.n.Node               ] version[6.2.4], pid[2264], build[ccec39f/2018-04-12T20:37:28.497551Z], OS[Linux/4.13.0-36-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/1.8.0_171/25.171-b11]
+[2018-05-23T00:58:27,412][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/tmp/elasticsearch.lohm0FxS, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/home/mando/addressbook/elasticsearch-6.2.4, -Des.path.conf=/home/mando/addressbook/elasticsearch-6.2.4/config]
+[2018-05-23T00:58:28,964][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [aggs-matrix-stats]
+[2018-05-23T00:58:28,965][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [analysis-common]
+[2018-05-23T00:58:28,965][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [ingest-common]
+[2018-05-23T00:58:28,966][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-expression]
+[2018-05-23T00:58:28,966][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-mustache]
+[2018-05-23T00:58:28,966][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-painless]
+[2018-05-23T00:58:28,967][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [mapper-extras]
+[2018-05-23T00:58:28,967][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [parent-join]
+[2018-05-23T00:58:28,967][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [percolator]
+[2018-05-23T00:58:28,967][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [rank-eval]
+[2018-05-23T00:58:28,968][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [reindex]
+[2018-05-23T00:58:28,968][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [repository-url]
+[2018-05-23T00:58:28,968][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [transport-netty4]
+[2018-05-23T00:58:28,968][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [tribe]
+[2018-05-23T00:58:28,969][INFO ][o.e.p.PluginsService     ] [kXSkM6k] no plugins loaded
+[2018-05-23T00:58:36,971][INFO ][o.e.d.DiscoveryModule    ] [kXSkM6k] using discovery type [zen]
+[2018-05-23T00:58:38,998][INFO ][o.e.n.Node               ] initialized
+[2018-05-23T00:58:38,999][INFO ][o.e.n.Node               ] [kXSkM6k] starting ...
+[2018-05-23T00:58:39,844][INFO ][o.e.t.TransportService   ] [kXSkM6k] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-23T00:58:39,951][WARN ][o.e.b.BootstrapChecks    ] [kXSkM6k] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2018-05-23T00:58:43,297][INFO ][o.e.c.s.MasterService    ] [kXSkM6k] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{U6fWRMgxSbW9gM2kMh_Tsw}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-23T00:58:43,329][INFO ][o.e.c.s.ClusterApplierService] [kXSkM6k] new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{U6fWRMgxSbW9gM2kMh_Tsw}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{U6fWRMgxSbW9gM2kMh_Tsw}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-23T00:58:43,479][INFO ][o.e.h.n.Netty4HttpServerTransport] [kXSkM6k] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-23T00:58:43,481][INFO ][o.e.n.Node               ] [kXSkM6k] started
+[2018-05-23T00:58:43,769][INFO ][o.e.g.GatewayService     ] [kXSkM6k] recovered [1] indices into cluster_state
+[2018-05-23T00:58:44,425][INFO ][o.e.c.r.a.AllocationService] [kXSkM6k] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[addressbook][2], [addressbook][3]] ...]).
+[2018-05-23T01:02:11,924][INFO ][o.e.n.Node               ] [kXSkM6k] stopping ...
+[2018-05-23T01:02:12,087][INFO ][o.e.n.Node               ] [kXSkM6k] stopped
+[2018-05-23T01:02:12,088][INFO ][o.e.n.Node               ] [kXSkM6k] closing ...
+[2018-05-23T01:02:12,104][INFO ][o.e.n.Node               ] [kXSkM6k] closed
+[2018-05-23T01:02:24,171][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-23T01:02:24,328][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [11.8gb], net total_space [17.5gb], types [ext4]
+[2018-05-23T01:02:24,329][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] heap size [1015.6mb], compressed ordinary object pointers [true]
+[2018-05-23T01:02:24,370][INFO ][o.e.n.Node               ] node name [kXSkM6k] derived from node ID [kXSkM6kVR-ixnFJF8YHP3A]; set [node.name] to override
+[2018-05-23T01:02:24,372][INFO ][o.e.n.Node               ] version[6.2.4], pid[2517], build[ccec39f/2018-04-12T20:37:28.497551Z], OS[Linux/4.13.0-36-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/1.8.0_171/25.171-b11]
+[2018-05-23T01:02:24,373][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/tmp/elasticsearch.cVBvI1L0, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/home/mando/addressbook/elasticsearch-6.2.4, -Des.path.conf=/home/mando/addressbook/elasticsearch-6.2.4/config]
+[2018-05-23T01:02:26,108][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [aggs-matrix-stats]
+[2018-05-23T01:02:26,114][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [analysis-common]
+[2018-05-23T01:02:26,115][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [ingest-common]
+[2018-05-23T01:02:26,115][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-expression]
+[2018-05-23T01:02:26,115][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-mustache]
+[2018-05-23T01:02:26,115][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-painless]
+[2018-05-23T01:02:26,116][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [mapper-extras]
+[2018-05-23T01:02:26,116][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [parent-join]
+[2018-05-23T01:02:26,116][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [percolator]
+[2018-05-23T01:02:26,116][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [rank-eval]
+[2018-05-23T01:02:26,117][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [reindex]
+[2018-05-23T01:02:26,117][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [repository-url]
+[2018-05-23T01:02:26,117][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [transport-netty4]
+[2018-05-23T01:02:26,117][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [tribe]
+[2018-05-23T01:02:26,118][INFO ][o.e.p.PluginsService     ] [kXSkM6k] no plugins loaded
+[2018-05-23T01:02:31,105][INFO ][o.e.d.DiscoveryModule    ] [kXSkM6k] using discovery type [zen]
+[2018-05-23T01:02:32,164][INFO ][o.e.n.Node               ] initialized
+[2018-05-23T01:02:32,164][INFO ][o.e.n.Node               ] [kXSkM6k] starting ...
+[2018-05-23T01:02:32,565][INFO ][o.e.t.TransportService   ] [kXSkM6k] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-23T01:02:32,621][WARN ][o.e.b.BootstrapChecks    ] [kXSkM6k] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2018-05-23T01:02:35,785][INFO ][o.e.c.s.MasterService    ] [kXSkM6k] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{1b8tDGg8TS64nOG0jF6UVg}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-23T01:02:35,813][INFO ][o.e.c.s.ClusterApplierService] [kXSkM6k] new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{1b8tDGg8TS64nOG0jF6UVg}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{1b8tDGg8TS64nOG0jF6UVg}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-23T01:02:35,922][INFO ][o.e.h.n.Netty4HttpServerTransport] [kXSkM6k] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-23T01:02:35,923][INFO ][o.e.n.Node               ] [kXSkM6k] started
+[2018-05-23T01:02:36,433][INFO ][o.e.g.GatewayService     ] [kXSkM6k] recovered [1] indices into cluster_state
+[2018-05-23T01:02:37,227][INFO ][o.e.c.r.a.AllocationService] [kXSkM6k] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[addressbook][3]] ...]).
+[2018-05-23T01:03:08,462][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-23T01:03:08,560][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:244) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:264) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:246) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
+[2018-05-23T01:03:08,576][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:244) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:264) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:246) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
+	... 6 more
+[2018-05-23T01:04:09,822][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-23T01:04:09,905][ERROR][o.e.b.Bootstrap          ] Exception
+java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:244) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:264) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:246) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) [elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) [elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) [elasticsearch-6.2.4.jar:6.2.4]
+[2018-05-23T01:04:09,914][WARN ][o.e.b.ElasticsearchUncaughtExceptionHandler] [] uncaught exception in thread [main]
+org.elasticsearch.bootstrap.StartupException: java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:125) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.execute(Elasticsearch.java:112) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.EnvironmentAwareCommand.execute(EnvironmentAwareCommand.java:86) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.mainWithoutErrorHandling(Command.java:124) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.cli.Command.main(Command.java:90) ~[elasticsearch-cli-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:92) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.main(Elasticsearch.java:85) ~[elasticsearch-6.2.4.jar:6.2.4]
+Caused by: java.lang.IllegalStateException: failed to obtain node locks, tried [[/home/mando/addressbook/elasticsearch-6.2.4/data/elasticsearch]] with lock id [0]; maybe these locations are not writable or multiple nodes were started without increasing [node.max_local_storage_nodes] (was [1])?
+	at org.elasticsearch.env.NodeEnvironment.<init>(NodeEnvironment.java:244) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:264) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.node.Node.<init>(Node.java:246) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap$5.<init>(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.setup(Bootstrap.java:213) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Bootstrap.init(Bootstrap.java:323) ~[elasticsearch-6.2.4.jar:6.2.4]
+	at org.elasticsearch.bootstrap.Elasticsearch.init(Elasticsearch.java:121) ~[elasticsearch-6.2.4.jar:6.2.4]
+	... 6 more
+[2018-05-23T01:04:55,656][INFO ][o.e.n.Node               ] [kXSkM6k] stopping ...
+[2018-05-23T01:04:57,750][INFO ][o.e.n.Node               ] [kXSkM6k] stopped
+[2018-05-23T01:04:57,751][INFO ][o.e.n.Node               ] [kXSkM6k] closing ...
+[2018-05-23T01:04:57,812][INFO ][o.e.n.Node               ] [kXSkM6k] closed
+[2018-05-23T01:06:31,591][INFO ][o.e.n.Node               ] [] initializing ...
+[2018-05-23T01:06:31,976][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] using [1] data paths, mounts [[/ (/dev/sda1)]], net usable_space [11.8gb], net total_space [17.5gb], types [ext4]
+[2018-05-23T01:06:31,977][INFO ][o.e.e.NodeEnvironment    ] [kXSkM6k] heap size [1015.6mb], compressed ordinary object pointers [true]
+[2018-05-23T01:06:32,050][INFO ][o.e.n.Node               ] node name [kXSkM6k] derived from node ID [kXSkM6kVR-ixnFJF8YHP3A]; set [node.name] to override
+[2018-05-23T01:06:32,055][INFO ][o.e.n.Node               ] version[6.2.4], pid[2033], build[ccec39f/2018-04-12T20:37:28.497551Z], OS[Linux/4.13.0-36-generic/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/1.8.0_171/25.171-b11]
+[2018-05-23T01:06:32,056][INFO ][o.e.n.Node               ] JVM arguments [-Xms1g, -Xmx1g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.io.tmpdir=/tmp/elasticsearch.xh9ujMc3, -XX:+HeapDumpOnOutOfMemoryError, -XX:+PrintGCDetails, -XX:+PrintGCDateStamps, -XX:+PrintTenuringDistribution, -XX:+PrintGCApplicationStoppedTime, -Xloggc:logs/gc.log, -XX:+UseGCLogFileRotation, -XX:NumberOfGCLogFiles=32, -XX:GCLogFileSize=64m, -Des.path.home=/home/mando/addressbook/elasticsearch-6.2.4, -Des.path.conf=/home/mando/addressbook/elasticsearch-6.2.4/config]
+[2018-05-23T01:06:35,610][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [aggs-matrix-stats]
+[2018-05-23T01:06:35,613][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [analysis-common]
+[2018-05-23T01:06:35,617][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [ingest-common]
+[2018-05-23T01:06:35,618][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-expression]
+[2018-05-23T01:06:35,623][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-mustache]
+[2018-05-23T01:06:35,623][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [lang-painless]
+[2018-05-23T01:06:35,624][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [mapper-extras]
+[2018-05-23T01:06:35,624][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [parent-join]
+[2018-05-23T01:06:35,632][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [percolator]
+[2018-05-23T01:06:35,634][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [rank-eval]
+[2018-05-23T01:06:35,634][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [reindex]
+[2018-05-23T01:06:35,635][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [repository-url]
+[2018-05-23T01:06:35,635][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [transport-netty4]
+[2018-05-23T01:06:35,635][INFO ][o.e.p.PluginsService     ] [kXSkM6k] loaded module [tribe]
+[2018-05-23T01:06:35,636][INFO ][o.e.p.PluginsService     ] [kXSkM6k] no plugins loaded
+[2018-05-23T01:06:49,848][INFO ][o.e.d.DiscoveryModule    ] [kXSkM6k] using discovery type [zen]
+[2018-05-23T01:06:52,508][INFO ][o.e.n.Node               ] initialized
+[2018-05-23T01:06:52,509][INFO ][o.e.n.Node               ] [kXSkM6k] starting ...
+[2018-05-23T01:06:52,922][INFO ][o.e.t.TransportService   ] [kXSkM6k] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2018-05-23T01:06:53,018][WARN ][o.e.b.BootstrapChecks    ] [kXSkM6k] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2018-05-23T01:06:56,324][INFO ][o.e.c.s.MasterService    ] [kXSkM6k] zen-disco-elected-as-master ([0] nodes joined), reason: new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{Y3dVsaeURwGGukJoiVwDNA}{127.0.0.1}{127.0.0.1:9300}
+[2018-05-23T01:06:56,356][INFO ][o.e.c.s.ClusterApplierService] [kXSkM6k] new_master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{Y3dVsaeURwGGukJoiVwDNA}{127.0.0.1}{127.0.0.1:9300}, reason: apply cluster state (from master [master {kXSkM6k}{kXSkM6kVR-ixnFJF8YHP3A}{Y3dVsaeURwGGukJoiVwDNA}{127.0.0.1}{127.0.0.1:9300} committed version [1] source [zen-disco-elected-as-master ([0] nodes joined)]])
+[2018-05-23T01:06:56,652][INFO ][o.e.h.n.Netty4HttpServerTransport] [kXSkM6k] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2018-05-23T01:06:56,659][INFO ][o.e.n.Node               ] [kXSkM6k] started
+[2018-05-23T01:06:58,389][INFO ][o.e.g.GatewayService     ] [kXSkM6k] recovered [1] indices into cluster_state
+[2018-05-23T01:06:59,827][INFO ][o.e.c.r.a.AllocationService] [kXSkM6k] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[addressbook][3]] ...]).

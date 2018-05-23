@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/mselgamal/addressbook#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "elasticsearch": "^15.0.0",
     "express": "^4.16.3",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "sha1": "^1.1.1"
   }
 }
